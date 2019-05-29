@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Faça Login</title>
+	</head>
+	<body>
+		<center>
+		<div id="divLog">
+		<h1>Faça Login<h1/>	
+			<form method="get" action="index.php">
+		
+				<input type="email" name="emailBox" id="emailBoxid" placeholder="Email"/><br/>
+				<input type="password" name="senhaBox" id="senhaBoxid" placeholder="********" />
+			<br/>
+				<input class="botao" type="submit" value="Entrar"/>
+
+
+			</form>		
+			
+		<a id="botao" href="registrar.php">Cadastre-se</a>
+			
+			<br/><a class="link" href="facebook.com">Login in Facebook</a>
+			<a class="link" href="twitter.com">Login in Twitter</a>
+			
+		</div>
+		</center>
+	</body>
+</html>
+
+
+<style>
+
+body{
+	background:  url("fundo-computers.jpg") no-repeat top center fixed;
+	background-size: cover;
+}
+
+div#divLog{
+	opacity: 0.9;
+	display: block;
+	margin: 100px auto auto auto;
+	border: none;
+	border-radius: 10px;
+	height: 450px;
+	width: 350px;
+	box-shadow: 1px 1px 10px #000000;
+	background: rgba(0, 40, 60, 0.9);
+}
+
+div#divLog:hover{
+	transition: 1;
+	background: rgba(0, 40, 50, 0.9);
+}
+
+form{
+	position: relative;
+	margin: 50px 50px 50px 50px;
+
+
+}
+
+input#emailBoxid, #senhaBoxid{
+	display: block;
+	width: 250px;
+	height: 20px;
+	border-radius: 10px;
+}
+input:hover{
+	transition: 1s;
+	opacity: 0.5;
+	background:#000000;
+	color: #ffffff;
+}
+input:blur{
+	background: rgba(0, 40, 50, 0.9);
+}
+
+input:focus {
+	background: #000000;
+	opacity: 0.5;
+	transition: 1s;
+	color:#ffffff;
+}
+
+
+.botao { 
+	width: 100px;
+	background: rgba(0, 100, 200, 0.5);
+	border-radius: 0px 10px;
+}
+.botao:hover{
+	background: #ffffff;
+	color: #000000;
+}
+	
+.link {	
+	position: flex;
+	font-size: 10pt;
+	display: inline-block;
+	color: #ffffff;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+.link:hover {
+	text-decoration: underline;
+	color: rgb(50,100,300);
+}
+
+h1{
+	text-align: center;
+	font-family: sans-serif;
+	color: #ffffff;
+}
+
+fieldset{
+	font-size: 8pt;
+
+}
+#botao{
+	position: flex;
+	color: #ffffff;
+	font-size: 10pt;
+	text-decoration: none;
+	border: 2px solid #ffffff;
+	padding: 5px;
+	margin: auto;
+	transition: 1s;
+	}
+#botao:hover{
+	background: #ffffff;
+	color: rgba(0, 100, 150, 1);
+	padding: 5px 30px 5px 30px;
+}
+
+</style>
